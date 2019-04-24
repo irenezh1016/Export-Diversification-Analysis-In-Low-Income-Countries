@@ -27,12 +27,7 @@ rep_div_a <- arrange(rep_div,cty,year,desc(value)) #from tidyverse
 top3<- function(x) {
   t3<- x %>% head(3) #from dplyr
 }
-
-#> try to look at the big picture
-# ggplot(data=FJI) +
-#   geom_col(mapping = aes(x=year,y=value,fill=variable), position="stack")
-
-# Plot every PIC
+# Plot every Pacific Island Country (PIC)
 #split country data based on cty
 cty.split <- split(rep_div_a,rep_div_a$cty,drop = FALSE)
 #cty.split
@@ -63,16 +58,6 @@ names(dis)<-levels(cty.plot$variable)
 
 rancol <- randomColor(count = 21, luminosity = c("bright"))
 names(rancol)<-levels(cty.plot$variable)
-
-#Print each chart out
-# for(var in unique(cty.plot$cty)) {
-#   dev.new()
-#   print(ggplot(data=cty.plot[cty.plot$cty == var,]) +
-#           geom_col(mapping = aes(x=year,y=value, fill=variable ,colour = "black"), position="stack") +
-#           ggtitle(var)+
-#           scale_fill_manual(values = cols)+
-#           theme_bw())
-# }
 
 for(var in unique(cty.plot$cty)) {
   dev.new()
