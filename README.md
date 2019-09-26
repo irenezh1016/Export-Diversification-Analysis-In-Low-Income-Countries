@@ -1,1 +1,4 @@
-# UNCometrade-Data-API
+# Export Diversification Analysis in Low Income Countries
+
+Export structure is less diversified in low-income countries (LICs) and especially small states that face resource constraints and small economic size. This paper explores the potential linkages between export structure and economic growth and its volatility in LICs and small states, using a range of indices of export concentration differing in the coverage of industries. The empirical analysis finds that export diversification may promote economic growth and reduce economic volatility in these countries. Furthermore, the analysis demonstrates that the economic benefits of export diversification differ by country size and income level-there are bigger benefits for relatively larger and poorer countries within the group of LICs and small states.
+
